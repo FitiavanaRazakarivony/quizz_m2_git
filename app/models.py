@@ -6,6 +6,6 @@ class User(db.Model):
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(255), nullable=False)
-    password = db.Column(db.String(255), nullable=False)  # Champ mot de passe
+    mdp = db.Column(db.String(255), nullable=False)
     model_image_path = db.Column(db.String(255), nullable=False)
     created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
