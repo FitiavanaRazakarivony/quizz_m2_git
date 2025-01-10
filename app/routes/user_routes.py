@@ -12,7 +12,6 @@ def register_user():
 
     if not name or not model_image:
         return jsonify({"error": "Le nom et l'image modèle sont requis."}), 400
-
     try:
         # Sauvegarde de l'image
         model_image_path = save_uploaded_file('uploads', model_image)
